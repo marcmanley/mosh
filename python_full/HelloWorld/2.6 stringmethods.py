@@ -29,3 +29,11 @@ unstriped_course = "   The unstriped Python Course"
 print(unstriped_course)
 striped_course = unstriped_course.strip()
 print(striped_course)
+
+# there's also .lstrip and .rstrip for removing text either from l or r
+
+# how to find the index of a character(s)
+
+print(course.find("ra"))
+
+# in this case, "ra" is at the 11 index within the str
