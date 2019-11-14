@@ -25,22 +25,3 @@ print(math.gcd(50, 8))
 # Produces error
 # print("\nThe gcd of a and 13 is: ", end="")
 # print(math.gcd('a', 13))
-
-# A Python program to print all
-# permutations using library function
-
-print("Permutations of (1, 2, 3, 4, 5)")
-
-# Get all permutations of [1, 2, 3]
-perm = permutations([1, 2, 3, 4, 5])
-
-# Print the obtained permutations
-for i in list(perm):
-    print(i)
-
-
-def perm(i):
-    num = factorial(len(i))
-    mults = Counter(i).values()
-    den = reduce(operator.mul, (factorial(v) for v in mults), 1)
-    return num / den
