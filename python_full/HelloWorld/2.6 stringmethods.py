@@ -37,3 +37,19 @@ print(striped_course)
 print(course.find("ra"))
 
 # in this case, "ra" is at the 11 index within the str
+
+# replacing
+
+print(course.replace("python", "Our new Python"),
+      (course.replace("programming", "Programming Course")))
+
+# in and not in
+
+print(course)
+print("py" in course)
+
+# this is true because "py" is in "python"
+
+print("meat balls" not in course)
+
+# this is also true because "meatballs" are not in the str 'course'
